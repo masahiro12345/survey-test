@@ -1,0 +1,15 @@
+{% load bootstrap %}
+
+<table class="table table-hover">
+    <!--<thead>
+      <tr>
+        <th> Question  </th>
+        <th> Answers </th>
+      </tr>
+    </thead> -->
+    <tbody>
+{% for form in response_form %}
+{{form|bootstrap}}
+{% endfor %}
+    </tbody>
+</table>
